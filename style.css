@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+}
+
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #e30d0d, #090dee);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game {
+    padding: 10px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    font-size: 80px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(18, 17, 17);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgb(49, 49, 49) 0 0 20px;
+}
+
+.box:hover {
+    background-color: rgb(24, 23, 23);
+}
+
+.box:active {
+    box-shadow: none;
+}
+
+.msg-container{
+    margin-top: 20px;
+    height: 70px;
+    width: 400px;
+    border: white;
+    border-radius: 10px;
+    box-shadow: rgb(49, 49, 49) 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e30d0d, #090dee);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hide{
+    display: none;
+}
+
+#reset-btn {
+    font-size: large;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgb(49, 49, 49) 0 0 20px;
+    background-color: rgb(18, 17, 17); 
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+#reset-btn span {
+    background-image: linear-gradient(to right, #121FCF, #CF1512);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#reset-btn:hover {
+    background-color: rgb(23, 23, 23); /* visible now */
+}
+
+#reset-btn:active {
+    background-color: rgb(18, 17, 17); 
+    box-shadow: none;
+}
