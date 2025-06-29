@@ -35,8 +35,9 @@ boxes.forEach((box)=>{
         
         let iswinner = checkwinner();
         
-        if (count === 9 && !iswinner)
+        if (count === 9 && !iswinner){
             showdraw();
+            }
     })
 })
 
